@@ -2,7 +2,7 @@
 
 # ⚡ Architectural Systems Portfolio // Sumit Gupta
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.5.27-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0-blue?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-WebGL-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
@@ -79,7 +79,7 @@ This portfolio is an interactive technical artifact reflecting core software eng
 ## 💻 Tech Stack & Dependencies
 
 ```
-Runtime:         Next.js 15.1.7 (App Router, Turbopack Ready)
+Runtime:         Next.js 15.5.27 (App Router, Turbopack Ready)
 UI Layer:        React 19.0.0, TypeScript 5.7.3
 Styling:         Tailwind CSS 3.4.17, PostCSS, Custom Design Tokens
 Spatial Graphics: Three.js 0.173.0 (WebGL Frustum Raycasting, Instancing)
