@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------
+ * 5-MODE PALETTE THEME TOKENS
+ * ----------------------------------------------------------- */
+:root,
+[data-theme="carbon"] {
+  --bg-primary: #0c0c0c;
+  --bg-surface: #141414;
+  --bg-card: #181818;
+  --bg-hover: #222222;
+  --border: rgba(232, 236, 239, 0.12);
+  --border-subtle: rgba(232, 236, 239, 0.06);
+  --text-primary: #f2f4f6;
+  --text-muted: #8a94a0;
+  --text-dim: #545b63;
+  --accent: #8b5cf6;
+  --accent-glow: rgba(139, 92, 246, 0.35);
+}
+
+[data-theme="concrete"] {
+  --bg-primary: #121214;
+  --bg-surface: #1a1a1e;
+  --bg-card: #202026;
+  --bg-hover: #2a2a32;
+  --border: rgba(226, 232, 240, 0.15);
+  --border-subtle: rgba(226, 232, 240, 0.08);
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent: #e2e8f0;
+  --accent-glow: rgba(226, 232, 240, 0.3);
+}
+
+[data-theme="rust"] {
+  --bg-primary: #0f0b09;
+  --bg-surface: #1c1410;
+  --bg-card: #251b15;
+  --bg-hover: #33241c;
+  --border: rgba(249, 115, 22, 0.18);
+  --border-subtle: rgba(249, 115, 22, 0.08);
+  --text-primary: #fff7ed;
+  --text-muted: #fdba74;
+  --text-dim: #9a3412;
+  --accent: #f97316;
+  --accent-glow: rgba(249, 115, 22, 0.4);
+}
+
+[data-theme="emerald"] {
+  --bg-primary: #07110e;
+  --bg-surface: #0e1e19;
+  --bg-card: #142922;
+  --bg-hover: #1c382f;
+  --border: rgba(16, 185, 129, 0.18);
+  --border-subtle: rgba(16, 185, 129, 0.08);
+  --text-primary: #ecfdf5;
+  --text-muted: #6ee7b7;
+  --text-dim: #065f46;
+  --accent: #10b981;
+  --accent-glow: rgba(16, 185, 129, 0.35);
+}
+
+[data-theme="blood"] {
+  --bg-primary: #110708;
+  --bg-surface: #200d0f;
+  --bg-card: #2b1114;
+  --bg-hover: #3a161b;
+  --border: rgba(239, 68, 68, 0.2);
+  --border-subtle: rgba(239, 68, 68, 0.08);
+  --text-primary: #fff1f2;
+  --text-muted: #fca5a5;
+  --text-dim: #991b1b;
+  --accent: #ef4444;
+  --accent-glow: rgba(239, 68, 68, 0.4);
+}
+
+/* -------------------------------------------------------------
+ * BASE PAGE SETUP & CUSTOM SELECTION
+ * ----------------------------------------------------------- */
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1), color 0.4s ease;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+::-moz-selection {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+/* Hide default scrollbars for an ultra-clean architectural viewport, except on modal content */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+[data-lenis-prevent] {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--accent) transparent !important;
+  overscroll-behavior: contain !important;
+  touch-action: pan-y !important;
+}
+
+[data-lenis-prevent]::-webkit-scrollbar {
+  display: block !important;
+  width: 5px;
+}
+
+[data-lenis-prevent]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-lenis-prevent]::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 9999px;
+}
+
+/* -------------------------------------------------------------
+ * LENIS SMOOTH SCROLL ENGINE RULES
+ * ----------------------------------------------------------- */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* -------------------------------------------------------------
+ * ARCHITECTURAL WIREFRAME GRID OVERLAYS
+ * ----------------------------------------------------------- */
+.bg-grid-schematic {
+  background-size: 4rem 4rem;
+  background-image: 
+    linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
+}
+
+.bg-dot-matrix {
+  background-size: 1.5rem 1.5rem;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+}
+
+/* Custom Text Stroke Utility */
+.stroke-text {
+  -webkit-text-stroke: 1.5px var(--border);
+  color: transparent;
+}
+
+.stroke-text-accent {
+  -webkit-text-stroke: 1.5px var(--accent);
+  color: transparent;
+}
