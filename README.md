@@ -1,153 +1,95 @@
-<div align="center">
+# SUMIT — THE SERIES
 
-# ⚡ Architectural Systems Portfolio // Sumit Gupta
+A cinematic, streaming-inspired portfolio for **Sumit Gupta**: Systems & Machine Learning Engineer and B.Tech CSE student at Vellore Institute of Technology (VIT).
+Every section is an episode, every project is an Original, and the whole site plays like a series.
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.5.27-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.0-blue?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Three.js](https://img.shields.io/badge/Three.js-WebGL-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+> A personal portfolio with a fictional streaming-platform look. It is not affiliated with Netflix or any other streaming service and uses none of their logos.
 
-<br/>
+## Run it locally
 
-**Production Artifacts · Machine Learning Infrastructure · Distributed Runtimes · Low-Level Kernels**
-
-[Explore Projects](#3-projects-featured) • [System Architecture](#2-system-architecture--key-features) • [Tech Stack](#4-tech-stack--dependencies) • [Quick Start](#5-quick-start--local-development)
-
----
-
-</div>
-
-## 📌 Overview
-
-This portfolio is an interactive technical artifact reflecting core software engineering and systems performance principles. Rather than relying on generic static layouts, the application integrates client-side WebGL spatial computing, rigid-body physics, procedural zero-asset audio haptics, and a brutalist design system.
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                             SYSTEM ARCHITECTURE                             │
-│                                                                             │
-│   [ Three.js 3D Lattice ] ───► [ Dynamic Canvas HUD ] ───► [ React Portal ] │
-│             │                                                     │         │
-│             ▼                                                     ▼         │
-│   [ Matter.js 2D Physics ]   [ Web Audio Synthesizer ]   [ Live Telemetry ] │
-│   (Gravity Invertible)       (Zero-Asset Haptics)        (Benchmark Runner) │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 🚀 Key Technical Highlights
-
-| Feature | Tech Stack | Engineering Highlights |
-| :--- | :--- | :--- |
-| **3D Fibonacci Spatial Lattice** | Three.js / GLSL | Mathematical spherical distribution ($N=8$, Golden Ratio $\phi$), dynamic canvas texture synthesis, raycasted hover expansion, momentum inertia tracking. |
-| **Zero-Asset Procedural Audio** | Web Audio API | Client-side DSP synthesis generating micro-burst sine waves, ADSR envelopes, and collision frequencies with 0 KB asset download footprint. |
-| **2D Rigid-Body Physics Lab** | Matter.js | Interactive physics sandbox with momentum grab/fling dynamics, wall collision audio synthesis, and dynamic gravity vector inversion ($\pm g_y$). |
-| **Portal-Isolated Telemetry** | React Portals | Modal dialogs mounted at `z-[99999]` into `document.body` to eliminate parent stacking context conflicts and header overlap. |
-| **Dynamic 5-Palette Design System** | Tailwind CSS / CSS Vars | Theme token architecture supporting 5 brutalist modes with real-time SVG favicon re-rendering and Three.js material synchronization. |
-
----
-
-## 🛠️ Featured Systems & Projects
-
-### `01` Speculative Decoding Engine
-`CUDA` `C++20` `vLLM` `FlashAttention-2` `PyTorch`
-- **Metric**: `+58.4% TTFT // 2.4X Throughput Multiplier`
-- Accelerated transformer inference on NVIDIA A100 via a 1.3B drafter model verified in single-pass greedy-$K$ tree validation.
-- Custom fused CUDA kernels eliminating host-to-device memory stalls.
-
-### `02` AegisVision Edge Pipeline
-`TensorRT` `C++` `POSIX Shm` `GStreamer` `OpenCV`
-- **Metric**: `11.2ms E2E Latency // 16 Synchronized 1080p Feeds`
-- Multi-camera object detection and telemetry system with dynamic INT8 precision calibration on NVIDIA Jetson AGX Orin.
-- Zero-copy ring buffers utilizing POSIX shared memory for frame passing.
-
-### `03` KhorosLog Distributed Commit Log
-`Go` `Raft` `Linux io_uring` `gRPC` `Protobuf`
-- **Metric**: `1.2M OPS/SEC // <180ms Leader Failover`
-- Replicated write-ahead log bypassing kernel `fsync` lock contention using asynchronous Linux `io_uring` submission queues.
-- Vectorized quorum replication over raw TCP ring buffers with CRC32 integrity validation.
-
-### `04` AxiomBox Micro-VM Sandbox
-`Rust` `Seccomp-BPF` `Cgroups v2` `KVM` `Linux Namespaces`
-- **Metric**: `46ms Cold Start // Rootless Micro-VM Isolation`
-- Rootless multi-tenant execution runtime restricting untrusted binaries to 12 deterministic POSIX system calls.
-
----
-
-## 💻 Tech Stack & Dependencies
-
-```
-Runtime:         Next.js 15.5.27 (App Router, Turbopack Ready)
-UI Layer:        React 19.0.0, TypeScript 5.7.3
-Styling:         Tailwind CSS 3.4.17, PostCSS, Custom Design Tokens
-Spatial Graphics: Three.js 0.173.0 (WebGL Frustum Raycasting, Instancing)
-Physics Engine:  Matter.js 0.20.0 (2D Rigid-Body Dynamics)
-Audio Synthesis: Web Audio API (Native OscillatorNode, GainNode ADSR)
-Smooth Scroll:   Lenis 1.1.18 (Scroll-Lock Compatible)
-Icons:           Lucide React 0.468.0
-```
-
----
-
-## 🎨 Brutalist Theme Palettes
-
-The portfolio includes an instant theme engine with synchronized SVG browser favicons:
-
-- ☀️ **01 Refreshing Summer** — Vivid Amber Orange (`#FB8500`) & Deep Prussian Navy (`#023047`)
-- 👑 **02 Black and Gold Elegance** — Rich Gold (`#FCA311`) & Pure Midnight (`#000000`)
-- 🌊 **03 Cool Coastal** — Imperial Red (`#EF233C`) & Space Cadet Slate (`#2B2D42`)
-- 🐬 **04 Ocean Breeze** — Vivid Cyan (`#00B4D8`) & Deep Pacific Navy (`#03045E`)
-- 🌿 **05 Earthly Green** — Sage Green (`#84A98C`) & Deep Forest Charcoal (`#2F3E46`)
-
----
-
-## ⚡ Quick Start & Local Development
-
-### Prerequisites
-- Node.js `18.x` or higher
-- `pnpm` (recommended) or `npm`
-
-### Installation
+Requires **Node.js 18+**.
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/G1Z2P8I7/portfolio.git
-cd portfolio
-
-# 2. Install dependencies
-pnpm install
-
-# 3. Start development server
-pnpm dev
+npm install
+npm run dev
 ```
 
-Visit [`http://localhost:3000`](http://localhost:3000) in your browser.
+Open the URL Vite prints (usually http://localhost:5173).
 
-### Production Build
+Production build:
 
 ```bash
-# Compile and optimize production build
-pnpm build
-
-# Run production server
-pnpm start
+npm run build
+npm run preview
 ```
 
----
+The static site is written to `dist/` and can be deployed as-is to Vercel, Netlify, GitHub Pages or any static host.
 
-## 👤 Author
+## Updating the content
 
-**Sumit Gupta**  
-*Computer Science & Engineering // Vellore Institute of Technology (Class of 2027)*
+**All content lives in one file: [`src/data/portfolio.ts`](src/data/portfolio.ts).** It was generated from the resume, and every component reads from it.
 
-- **GitHub**: [@G1Z2P8I7](https://github.com/G1Z2P8I7)
-- **LinkedIn**: [Sumit Gupta](https://www.linkedin.com/in/sumit-gupta-a2bbb1423/)
-- **Email**: `22guptasumit@gmail.com`
+| To change… | Edit |
+| --- | --- |
+| Name, intro, email, LinkedIn, GitHub | `profile` |
+| A project, or a new one | `projects` (add an object; it appears in Originals, the overlay, the resume sheet and the counts) |
+| Achievements / certifications | `achievements`, `certifications` |
+| Skills and their "where it's used" notes | `skillCategories`, `skillEvidence` |
+| Seasons and episodes (My Journey) | `seasons` |
+| Top 10 row | `topPicks` |
+| ▶ Play Intro highlight reel | `introSlides` |
+| Profile order (Recruiter / Systems Engineer / ML Researcher) | `viewerProfiles` |
+| Opening studio card text | `profile.originalLabel` |
 
----
+**Resume:** replace `public/assets/Sumit_Gupta_Resume.pdf`.
 
-<div align="center">
-<sub>Engineered with Next.js 15, Three.js, Matter.js & Web Audio API. Draft 1.</sub>
-</div>
+**Photo:** replace `pic1.jpeg` (high-res photo) and `pic.png` (background-removed cutout with the same framing), then run:
+
+```bash
+npm run images
+```
+
+This rebuilds the responsive WebP portraits and the social share image in `public/assets/`.
+
+## What's inside
+
+```
+src/
+  data/portfolio.ts        ← single source of truth (from the resume)
+  App.tsx                  ← stages: opening → profile select → home; overlays
+  components/
+    OpeningSequence        ← black → studio card → SUMIT → THE SERIES → portrait → ▶ PLAY
+    ProfileSelector        ← "Who's watching?" (changes section order only)
+    Navbar                 ← hide-on-scroll nav, profile switcher, mobile menu
+    Hero                   ← billboard: parallax portrait, particles, light streaks, floating chips
+    PlayIntro              ← ▶ Play Intro: zoom into portrait → highlight reel (pause, ← →, tap zones)
+    ContinueWatching       ← cards with real "watched" progress bars
+    About                  ← The Pilot
+    Seasons / EpisodeCard  ← My Journey as seasons and episodes
+    Originals / ProjectCard← pinned horizontal sequence on desktop, swipe rail on touch
+    ProjectModal           ← full-screen project overlay with a shared-element transition
+    TopPicks               ← Top 10-style row
+    Skills                 ← skill genres; each card shows where the skill appears
+    Achievements           ← award-poster cards + certification rail (links to credentials)
+    ResumeViewer/ResumeModal ← designed resume sheet, PDF viewer, download
+    FinalCTA               ← TO BE CONTINUED… + contact links
+    CustomCursor, fx.tsx   ← cursor states, magnetic buttons, 3D tilt, text reveals, particles
+  hooks/                   ← Lenis smooth scroll + scroll lock, media queries, watch progress
+scripts/build-images.mjs   ← portrait/share-image pipeline (sharp)
+```
+
+**Stack:** React 18, TypeScript, Vite 6, Tailwind CSS 4, Framer Motion 11, Lenis.
+
+## Accessibility and performance
+
+- `prefers-reduced-motion` is respected: smooth scroll, the custom cursor, tilt, particles, grain and the pinned horizontal scroll turn off, and the opening jumps straight to its final frame.
+- Hover effects only run on devices with a precise pointer. Touch devices get tap interactions and native swipe rails.
+- The custom cursor appears only with a mouse or trackpad.
+- Overlays close with Esc, and the highlight reel supports Space and the ← → keys.
+- Portraits are responsive WebP files (25–90 KB). Overlays are code-split, and particles pause when they're off screen.
+
+## Keyboard shortcuts
+
+- **Opening:** Enter or Esc skips it.
+- **Play Intro:** Space pauses, ← and → change slides, Esc closes.
+- **Project and resume overlays:** Esc closes.
