@@ -1,95 +1,148 @@
-# SUMIT — THE SERIES
+# 🎬 SUMIT — THE SERIES
 
-A cinematic, streaming-inspired portfolio for **Sumit Gupta**: Systems & Machine Learning Engineer and B.Tech CSE student at Vellore Institute of Technology (VIT).
-Every section is an episode, every project is an Original, and the whole site plays like a series.
+<div align="center">
 
-> A personal portfolio with a fictional streaming-platform look. It is not affiliated with Netflix or any other streaming service and uses none of their logos.
+[![Live Demo](https://img.shields.io/badge/Live_Portfolio-Streaming_Experience-E50914?style=for-the-badge&logo=netflix&logoColor=white)](https://github.com/G1Z2P8I7/portfolio)
+[![Next-Gen Stack](https://img.shields.io/badge/Stack-React_18_•_Vite_6_•_Tailwind_v4_•_Framer_Motion-blue?style=for-the-badge&logo=react&logoColor=white)](https://github.com/G1Z2P8I7/portfolio)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## Run it locally
+<br/>
 
-Requires **Node.js 18+**.
+**A cinematic, streaming-inspired portfolio for [Sumit Gupta](https://linkedin.com/in/sumit-gupta-a2bbb1423)**  
+*Systems & Machine Learning Engineer • B.Tech Computer Science (VIT Vellore)*  
+
+Every section is an episode, every project is an Original, and the entire portfolio plays like a series.
+
+[Explore Originals](#-the-originals) • [View Resume](#-the-screenplay--resume) • [Tech Stack](#-tech-stack) • [Quick Start](#-quick-start)
+
+</div>
+
+---
+
+## 📽️ Visual Tour & Features
+
+### 01. The Billboard & Studio Opening
+> The signature studio card animates with letterbox bars (*"A GUPTA ORIGINAL"* &rarr; *"SUMIT — THE SERIES"*), leading into a dynamic billboard featuring a high-resolution transparent portrait with 3D pointer parallax, live telemetry chips, and ambient audio feedback.
+
+<div align="center">
+  <img src="public/assets/screenshots/01-hero.png" alt="Billboard Hero Section" width="100%" />
+</div>
+
+<br/>
+
+### 02. The Pilot (About Me)
+> The biographical story arc framed as an interactive 3D poster card, showcasing academic background at Vellore Institute of Technology, core stack, and industrial software engineering focus.
+
+<div align="center">
+  <img src="public/assets/screenshots/02-about.png" alt="The Pilot - About Me" width="100%" />
+</div>
+
+<br/>
+
+### 03. The Originals (Flagship Productions)
+> Desktop-pinned horizontal scroll sequence and mobile swipe rail showcasing 4 high-concurrency engineering projects with deep-dive modal screenplays.
+
+<div align="center">
+  <img src="public/assets/screenshots/03-originals.png" alt="The Originals - Flagship Projects" width="100%" />
+</div>
+
+<br/>
+
+### 04. Top Moments & Certifications
+> Laurel-wreath award posters celebrating verifiable milestones: +35% telemetry throughput at SAIL, 40% manual auditing reduction, and 150+ solved algorithmic problems on LeetCode & CodeChef.
+
+<div align="center">
+  <img src="public/assets/screenshots/04-top-moments.png" alt="Awards Season - Top Moments" width="100%" />
+</div>
+
+<br/>
+
+### 05. The Screenplay (Full Resume)
+> In-app collapsible resume sheet with synchronized metadata, printable PDF viewer, and direct one-click download for `Sumit_Gupta_Resume.pdf`.
+
+<div align="center">
+  <img src="public/assets/screenshots/05-screenplay-resume.png" alt="The Screenplay - Full Resume" width="100%" />
+</div>
+
+<br/>
+
+### 06. To Be Continued (Contact & Finale)
+> End-credits finale with interactive CTA buttons, quick social links (LinkedIn, GitHub, Email), and options to replay the opening sequence.
+
+<div align="center">
+  <img src="public/assets/screenshots/06-to-be-continued.png" alt="To Be Continued - Finale CTA" width="100%" />
+</div>
+
+---
+
+## 🛠️ The Originals
+
+| Title | Domain & Tech | Key Architectural Achievements |
+| :--- | :--- | :--- |
+| **Adaptive Speculative LLM Serving Engine** | `CUDA` `PyTorch` `Python` `FastAPI` `Llama-3.1-8B` | Built local inference server with entropy-guided dynamic draft lengths (SVIP), O(1) KV-cache rollback avoiding fragmentation on 8GB VRAM, and lossless verification. |
+| **KhorosLog: Distributed Fault-Tolerant Commit Log** | `Go` `Raft` `TCP` `mmap` `CRC32` | Distributed write-ahead log & streaming engine with randomized election timers, leader failover under 150ms, memory-mapped page cache, and 80,000+ durable writes/sec. |
+| **AegisVision: Real-Time Multi-Stream Vision Pipeline** | `C++` `Python` `TensorRT` `OpenCV` `WebRTC` | Video analytics processing 6 concurrent 1080p RTSP feeds at 60+ FPS using zero-copy POSIX shared memory, TensorRT FP16 dynamic batching on RTX 4060, and <80ms latency. |
+| **ReadmitIQ: Hospital Readmission Risk Prediction** | `Python` `FastAPI` `Streamlit` `SHAP` `Equalized Odds` | 30-day clinical risk model on 69,987 patients with calibrated probabilities (ECE 0.0062), 1.73x top quintile risk lift, and Equalized Odds fairness auditing. |
+
+---
+
+## 💻 Tech Stack & Architecture
+
+```
+Core Framework:     React 18.3, TypeScript 5.8, Vite 6.3
+Styling:            Tailwind CSS 4.1, PostCSS, Custom Design Tokens
+Animation Engine:   Framer Motion 11.18 (LayoutGroup, Spring Physics, Parallax)
+Smooth Scroll:      Lenis 1.1.20 (With Scroll-Lock Coordination)
+Typography:         Bebas Neue (Display), Instrument Serif (Editorial), Inter (UI)
+Media Optimization: Responsive WebP pipeline (Lanczos sampling, transparent alpha)
+Document Reader:    Custom PDF embedding & ReportLab-generated resume
+```
+
+---
+
+## 👤 Who's Watching? (Adaptive Perspectives)
+
+The portfolio features an interactive profile selector that re-orders sections based on who is viewing:
+- 💼 **Recruiter**: Prioritizes the Resume Screenplay, SAIL industry impact, and core metrics first.
+- ⚡ **Systems Engineer**: Highlights *KhorosLog* (Go/Raft commit log) and *AegisVision* (C++/TensorRT) first.
+- 🧠 **ML Researcher**: Highlights *Speculative LLM Serving* and *ReadmitIQ Fairness Auditing* first.
+- 🎬 **Sumit (Main)**: The full chronological narrative experience.
+
+---
+
+## ⚡ Quick Start & Local Setup
+
+### Prerequisites
+- Node.js `18.x` or higher
+- `npm` or `pnpm`
+
+### Installation
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/G1Z2P8I7/portfolio.git
+cd portfolio
+
+# 2. Install dependencies
 npm install
+
+# 3. Start local development server
 npm run dev
 ```
 
-Open the URL Vite prints (usually http://localhost:5173).
-
-Production build:
+### Production Build
 
 ```bash
+# Compile and package production static site
 npm run build
+
+# Preview locally
 npm run preview
 ```
 
-The static site is written to `dist/` and can be deployed as-is to Vercel, Netlify, GitHub Pages or any static host.
+---
 
-## Updating the content
+## 📄 License & Attribution
 
-**All content lives in one file: [`src/data/portfolio.ts`](src/data/portfolio.ts).** It was generated from the resume, and every component reads from it.
-
-| To change… | Edit |
-| --- | --- |
-| Name, intro, email, LinkedIn, GitHub | `profile` |
-| A project, or a new one | `projects` (add an object; it appears in Originals, the overlay, the resume sheet and the counts) |
-| Achievements / certifications | `achievements`, `certifications` |
-| Skills and their "where it's used" notes | `skillCategories`, `skillEvidence` |
-| Seasons and episodes (My Journey) | `seasons` |
-| Top 10 row | `topPicks` |
-| ▶ Play Intro highlight reel | `introSlides` |
-| Profile order (Recruiter / Systems Engineer / ML Researcher) | `viewerProfiles` |
-| Opening studio card text | `profile.originalLabel` |
-
-**Resume:** replace `public/assets/Sumit_Gupta_Resume.pdf`.
-
-**Photo:** replace `pic1.jpeg` (high-res photo) and `pic.png` (background-removed cutout with the same framing), then run:
-
-```bash
-npm run images
-```
-
-This rebuilds the responsive WebP portraits and the social share image in `public/assets/`.
-
-## What's inside
-
-```
-src/
-  data/portfolio.ts        ← single source of truth (from the resume)
-  App.tsx                  ← stages: opening → profile select → home; overlays
-  components/
-    OpeningSequence        ← black → studio card → SUMIT → THE SERIES → portrait → ▶ PLAY
-    ProfileSelector        ← "Who's watching?" (changes section order only)
-    Navbar                 ← hide-on-scroll nav, profile switcher, mobile menu
-    Hero                   ← billboard: parallax portrait, particles, light streaks, floating chips
-    PlayIntro              ← ▶ Play Intro: zoom into portrait → highlight reel (pause, ← →, tap zones)
-    ContinueWatching       ← cards with real "watched" progress bars
-    About                  ← The Pilot
-    Seasons / EpisodeCard  ← My Journey as seasons and episodes
-    Originals / ProjectCard← pinned horizontal sequence on desktop, swipe rail on touch
-    ProjectModal           ← full-screen project overlay with a shared-element transition
-    TopPicks               ← Top 10-style row
-    Skills                 ← skill genres; each card shows where the skill appears
-    Achievements           ← award-poster cards + certification rail (links to credentials)
-    ResumeViewer/ResumeModal ← designed resume sheet, PDF viewer, download
-    FinalCTA               ← TO BE CONTINUED… + contact links
-    CustomCursor, fx.tsx   ← cursor states, magnetic buttons, 3D tilt, text reveals, particles
-  hooks/                   ← Lenis smooth scroll + scroll lock, media queries, watch progress
-scripts/build-images.mjs   ← portrait/share-image pipeline (sharp)
-```
-
-**Stack:** React 18, TypeScript, Vite 6, Tailwind CSS 4, Framer Motion 11, Lenis.
-
-## Accessibility and performance
-
-- `prefers-reduced-motion` is respected: smooth scroll, the custom cursor, tilt, particles, grain and the pinned horizontal scroll turn off, and the opening jumps straight to its final frame.
-- Hover effects only run on devices with a precise pointer. Touch devices get tap interactions and native swipe rails.
-- The custom cursor appears only with a mouse or trackpad.
-- Overlays close with Esc, and the highlight reel supports Space and the ← → keys.
-- Portraits are responsive WebP files (25–90 KB). Overlays are code-split, and particles pause when they're off screen.
-
-## Keyboard shortcuts
-
-- **Opening:** Enter or Esc skips it.
-- **Play Intro:** Space pauses, ← and → change slides, Esc closes.
-- **Project and resume overlays:** Esc closes.
+Designed and developed by **[Sumit Gupta](https://github.com/G1Z2P8I7)**. Built with high-performance modern web technologies.  
+*A personal portfolio with a fictional streaming-platform aesthetic. Not affiliated with or endorsed by Netflix or any commercial streaming service.*
