@@ -95,11 +95,11 @@ Icons:           Lucide React 0.468.0
 
 The portfolio includes an instant theme engine with synchronized SVG browser favicons:
 
-- 🟣 **01 Carbon // Midnight** — Electric Violet (`#8B5CF6`)
-- ⚪ **02 Concrete // Brutalist** — Monolithic Platinum (`#E2E8F0`)
-- 🟠 **03 Rust // Terracotta** — Warm Ochre (`#F97316`)
-- 🟢 **04 Emerald // Cybernetic** — Cyan Emerald (`#10B981`)
-- 🔴 **05 Crimson // High-Contrast** — Vivid Scarlet (`#EF4444`)
+- ☀️ **01 Refreshing Summer** — Vivid Amber Orange (`#FB8500`) & Deep Prussian Navy (`#023047`)
+- 👑 **02 Black and Gold Elegance** — Rich Gold (`#FCA311`) & Pure Midnight (`#000000`)
+- 🌊 **03 Cool Coastal** — Imperial Red (`#EF233C`) & Space Cadet Slate (`#2B2D42`)
+- 🐬 **04 Ocean Breeze** — Vivid Cyan (`#00B4D8`) & Deep Pacific Navy (`#03045E`)
+- 🌿 **05 Earthly Green** — Sage Green (`#84A98C`) & Deep Forest Charcoal (`#2F3E46`)
 
 ---
 

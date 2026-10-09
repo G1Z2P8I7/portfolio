@@ -18,47 +18,47 @@ export const THEMES: Record<ThemeMode, ThemeConfig> = {
   carbon: {
     id: "carbon",
     number: "01",
-    name: "Carbon // Midnight",
-    accent: "#8B5CF6", // Electric Violet
-    bg: "#0c0c0c",
-    surface: "#141414",
-    border: "rgba(232, 236, 239, 0.12)",
+    name: "Refreshing Summer",
+    accent: "#FB8500", // Vivid Amber Orange
+    bg: "#022030",
+    surface: "#023047",
+    border: "rgba(142, 202, 230, 0.22)",
   },
   concrete: {
     id: "concrete",
     number: "02",
-    name: "Concrete // Brutalist",
-    accent: "#E2E8F0", // Monolithic Platinum
-    bg: "#121214",
-    surface: "#1a1a1e",
-    border: "rgba(226, 232, 240, 0.15)",
+    name: "Black and Gold Elegance",
+    accent: "#FCA311", // Rich Gold
+    bg: "#000000",
+    surface: "#14213D",
+    border: "rgba(252, 163, 17, 0.25)",
   },
   rust: {
     id: "rust",
     number: "03",
-    name: "Rust // Terracotta",
-    accent: "#F97316", // Warm Ochre
-    bg: "#0f0b09",
-    surface: "#1c1410",
-    border: "rgba(249, 115, 22, 0.18)",
+    name: "Cool Coastal",
+    accent: "#EF233C", // Imperial Red
+    bg: "#181926",
+    surface: "#2B2D42",
+    border: "rgba(239, 35, 60, 0.25)",
   },
   emerald: {
     id: "emerald",
     number: "04",
-    name: "Emerald // Cybernetic",
-    accent: "#10B981", // Cyan Emerald
-    bg: "#07110e",
-    surface: "#0e1e19",
-    border: "rgba(16, 185, 129, 0.18)",
+    name: "Ocean Breeze",
+    accent: "#00B4D8", // Vivid Cyan
+    bg: "#020336",
+    surface: "#03045E",
+    border: "rgba(0, 180, 216, 0.25)",
   },
   blood: {
     id: "blood",
     number: "05",
-    name: "Crimson // High-Contrast",
-    accent: "#EF4444", // Vivid Scarlet
-    bg: "#110708",
-    surface: "#200d0f",
-    border: "rgba(239, 68, 68, 0.2)",
+    name: "Earthly Green",
+    accent: "#84A98C", // Sage Green
+    bg: "#1C262B",
+    surface: "#2F3E46",
+    border: "rgba(132, 169, 140, 0.25)",
   },
 };
 
